@@ -25,3 +25,4 @@ RUN printf "user:$(openssl passwd -crypt $PASSWORD)\n" >> $SRV_PATH/.htpasswd
 
 # Add our own configuration in
 COPY nginx_main_site.conf /etc/nginx/conf.d/
+
